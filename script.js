@@ -1,3 +1,9 @@
+document.getElementsByClassName("topHeader__img")[0].addEventListener("load", function() {
+	setTimeout(function() {
+		document.getElementsByClassName("topHeader__img")[0].style.opacity = 1;
+	}, 1000);
+});
+
 document.getElementsByClassName("topHeader__imgLink")[0].addEventListener("mouseover", function() {
 	[].forEach.call(document.getElementsByClassName("main__section"), function(el) {
 		el.classList.add("activePart");
